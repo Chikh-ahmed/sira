@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+     <meta name="theme-color" content="rgba(0, 0, 255, 0.839)">
+     <title>تلخيص الأسئلة</title>
+     <link rel="stylesheet" href="sira.css">
+
+</head>
+<body dir="rtl">
+     
+     <h1> لخص أسئلتك !!</h1>
+     
+     <label>عنون ملخصك !</label>
+     <header>
+          <input type="text" id="title" placeholder="ما هو عنوان الملخص.."/>
+          <button onclick="tm();" id="tm">إضافة العنوان</button>
+     </header>
+     <div id="ale"></div>
+
+     <label id="a-add">أضف أسئلتك !</label>
+     <main>
+        <input type="text" id="question" class="question" placeholder="أضف سؤالا.."/>
+        <input type="text" id="answer" class="question" placeholder="أضف جوابا.."/>
+     </main>
+     <div id="aler"></div>
+     <button onclick="add()" id="add">إضافة السؤال</button>
+
+
+     <div id="summarys">
+     <h2 id="titles"></h2><br>
+     <div id="summary"></div>
+     </div>
+     <footer>
+       <button id="edit" onclick="edit_summary();">تعديل</button>
+       <button id="copy" onclick="copy();">نسخ الملخص</button>
+     </footer>
+     
+     <!-- <main id="s">
+          <center>
+          <h3>من نحن !</h3>
+          <h3>ما نعرفه عن أنفسنا أننا نحن، سلام !</h3>
+          </center>
+     </main> -->
+
+     <script src="sira.js"></script>
+</body>
+</html>
